@@ -72,7 +72,7 @@ header nav ul li:nth-child(4) a{
     position: relative;
 }
 
-header nav ul li:nth-child(4) a::after{
+header .line ul li:nth-child(4) a::after{
     content: "";
     width: 3px;
     height: 70%;
@@ -109,5 +109,31 @@ header nav ul li:hover a svg{
     fill: #00050d;
 }
 
+.rightside-content nav ul li:nth-child(3) a svg{
+    width: 23px;
+    height: 20px;
+    fill: #fff;
+}
+
+.rightside-content nav ul li:hover a svg{
+    fill: #00050d;
+}
+
+.rightside-content nav ul li a img{
+    width: 28px;
+    height: 28px;
+}
+
+.rightside-content nav ul li button{
+    padding: .5rem 1.5rem;
+    background-color: #3064b8;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 7px;
+}
+
+.rightside-content nav ul li button:hover{
+    background-color: #6591d7;
+}
 
 /* header section end */
