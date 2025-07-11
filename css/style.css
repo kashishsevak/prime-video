@@ -9,7 +9,7 @@
 }
 
 html body{
-    font-family: 'Nunito';
+    font-family: 'nunito';
 }
 
 a{
@@ -31,6 +31,14 @@ ul li{
     display: flex;
 }
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
 .align-item-center{
     align-items: center;
 }
@@ -45,9 +53,11 @@ header{
 
 header h2{
     margin-right: 2.5rem;
+    font-weight: 500;
 }
 
 header nav ul li a{
+    margin: 0 .5rem;
     padding: .5rem 1rem;
 }
 
@@ -62,14 +72,14 @@ header nav ul li:nth-child(4) a{
     position: relative;
 }
 
-header nav ul li:nth-child(4) a::before{
+header nav ul li:nth-child(4) a::after{
     content: "";
     width: 3px;
     height: 70%;
     background-color: #949494;
     position: absolute;
     top: 50%;
-    right: -5px;
+    right: -11px;
     transform: translateY(-12px);
 }
 
@@ -84,7 +94,20 @@ header nav ul li:last-child a svg{
     fill: #fff;
 }
 
+
+.justify-content-end{
+    justify-content: flex-end;
+}
+
+header nav ul li:first-child a svg{
+    width: 22px;
+    height: 22px;
+    fill: #fff;
+}
+
 header nav ul li:hover a svg{
     fill: #00050d;
 }
+
+
 /* header section end */
