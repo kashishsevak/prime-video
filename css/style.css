@@ -105,8 +105,36 @@ header nav ul li:last-child a:hover svg{
 
 header .navbar ul + ul li a img{
     width: 28px;
-    border: 1px solid black;
     border-radius: 50%;
+    vertical-align: middle;
 }
+
+header .navbar nav ul + ul li a{
+    border-radius: 50%;
+    padding: .5rem .7rem;
+}
+
+header .navbar nav ul + ul li:nth-child(4) a{
+    border-radius: 50%;
+    padding: .5rem .6rem;
+}
+
+header .navbar nav ul + ul li:nth-child(2) a{
+    border-radius: 5px;
+}
+
+header .navbar nav ul + ul li:last-child a{
+    background-color: #1A98FFCC;
+    color: #fff;
+    font-size: 18px;
+    padding: .5rem 1rem;
+    border: 0;
+    border-radius: 5px;
+}
+
+header .navbar nav ul + ul li:last-child a:hover{
+    background-color: #5ca1ea;
+}
+
 
 /* header section end */
