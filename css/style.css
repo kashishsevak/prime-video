@@ -1,74 +1,74 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     max-width: 1920px;
     padding: 0 30px;
     margin: 0 auto;
 }
 
-html body{
+html body {
     font-family: 'nunito';
     background-color: #00050d;
 }
 
-a{
+a {
     text-decoration: none;
     display: inline-block;
     color: inherit;
 }
 
-ul li{
+ul li {
     list-style: none;
 }
 
-img{
+img {
     width: 100%;
     display: block;
 }
 
-.row{
+.row {
     display: flex;
     flex-wrap: wrap;
 }
 
-.col-6{
+.col-6 {
     width: 50%;
 }
 
-.col-4{
+.col-4 {
     width: 33.33%;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
-.flex-wrap{
+.flex-wrap {
     flex-wrap: wrap;
 }
 
-.justify-content-between{
+.justify-content-between {
     justify-content: space-between;
 }
 
-.align-item-center{
+.align-item-center {
     align-items: center;
 }
 
-.flex-column{
+.flex-column {
     flex-direction: column;
 }
 
-.w-100{
+.w-100 {
     width: 100%;
 }
 
 /* header section start */
-header{
+header {
     background-color: #00050d;
     color: #fff;
     padding: .5rem 2rem;
@@ -77,35 +77,35 @@ header{
     top: 0;
 }
 
-header .navbar{
+header .navbar {
     padding: 0 2.5rem;
 }
 
-header .navbar nav{
+header .navbar nav {
     width: 100%;
 }
 
-header .logo img{
+header .logo img {
     width: 100px;
 }
 
-header nav ul li a{
+header nav ul li a {
     margin: 0 .5rem;
     padding: .5rem 1rem;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     background-color: #fff;
     color: #00050d;
     border-radius: 5px;
     transition: all 0.2s linear;
 }
 
-header nav ul li:nth-child(4) a{
+header nav ul li:nth-child(4) a {
     position: relative;
 }
 
-header nav ul:first-child li:nth-child(4) a::after{
+header nav ul:first-child li:nth-child(4) a::after {
     content: "";
     width: 3px;
     height: 70%;
@@ -116,37 +116,60 @@ header nav ul:first-child li:nth-child(4) a::after{
     transform: translateY(-12px);
 }
 
-header nav ul li:last-child a{
+header nav ul li:last-child a {
     display: flex;
     align-items: center;
 }
 
-header nav ul li a svg{
+header nav ul li a svg {
     width: 21px;
     fill: #fff;
     vertical-align: middle;
 }
 
-header nav ul li a:hover svg{
+header nav ul li a:hover svg {
     fill: #00050d;
 }
 
-header .navbar ul + ul li a img{
+header .navbar ul+ul li a img {
     width: 28px;
     border-radius: 50%;
 }
 
-header .navbar nav ul + ul li a{
+header .navbar nav ul+ul li a {
     border-radius: 50%;
     padding: .5rem .7rem;
     vertical-align: middle;
 }
 
-header .navbar nav ul + ul li:nth-child(2) a{
+header .navbar nav ul+ul li:nth-child(2) a {
     border-radius: 5px;
 }
 
-header .navbar nav ul + ul li:last-child a{
+header .navbar nav ul+ul li:nth-child(2) a::after {
+    content: '\f078';
+}
+header .navbar nav ul+ul li:nth-child(2):hover a::after {
+    content: '\f077';
+}
+
+.dropdown{
+    position: relative;
+}
+.dropdown-menu{
+    background-color: #e2e2e2cb;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.dropdown .dropdown-menu .toggle a:hover{
+    display: block;
+}
+
+
+header .navbar nav ul+ul li:last-child .btn{
     background-color: #0d5896;
     color: #fff;
     font-size: 18px;
@@ -155,14 +178,13 @@ header .navbar nav ul + ul li:last-child a{
     border-radius: 5px;
 }
 
-header .navbar nav ul + ul li:last-child a:hover{
+header .navbar nav ul+ul li:last-child .btn:hover{
     background-color: #417cbb;
 }
-
 /* header section end */
 
 /* hero section start */
-.hero{
+.hero {
     color: #fff;
     height: 700px;
     background-image: url(../images/hero.jpg);
@@ -171,23 +193,23 @@ header .navbar nav ul + ul li:last-child a:hover{
     background-size: cover;
 }
 
-.hero .hero-content{
+.hero .hero-content {
     margin: 2rem 0;
 }
 
-.hero h1{
+.hero h1 {
     margin: 2rem;
     font-size: 48px;
     font-weight: 700;
 }
 
-.hero p{
+.hero p {
     margin: 1rem 2rem;
     font-size: 21px;
     font-weight: 700;
 }
 
-.hero a{
+.hero a {
     width: fit-content;
     background-color: #fff;
     color: #00050d;
@@ -198,14 +220,15 @@ header .navbar nav ul + ul li:last-child a:hover{
     border-radius: 5px;
 }
 
-.hero a:hover{
+.hero a:hover {
     color: #949494;
     scale: 1.1;
 }
+
 /* hero section end */
 
 /* movie section start */
-.movie{
+.movie {
     color: #fff;
     height: 900px;
     background-image: url(../images/movie.jpg);
@@ -215,22 +238,23 @@ header .navbar nav ul + ul li:last-child a:hover{
 }
 
 
-.movie .movie-content{
+.movie .movie-content {
     margin: 2rem 0;
 }
-.movie h1{
+
+.movie h1 {
     margin: 2rem;
     font-size: 48px;
     font-weight: 700;
 }
 
-.movie p{
+.movie p {
     margin: 1rem 2rem;
     font-size: 21px;
     font-weight: 700;
 }
 
-.movie a{
+.movie a {
     width: fit-content;
     background-color: #fff;
     color: #00050d;
@@ -241,51 +265,53 @@ header .navbar nav ul + ul li:last-child a:hover{
     border-radius: 5px;
 }
 
-.movie a:hover{
+.movie a:hover {
     color: #949494;
     scale: 1.1;
 }
+
 /* movie section end */
 
 /* favorite-subscriptions section start */
-.favorite-subscriptions{
+.favorite-subscriptions {
     padding: 4rem 2rem;
 }
 
-.favorite-subscriptions-content{
+.favorite-subscriptions-content {
     padding-right: 5px;
 }
 
-.favorite-subscriptions h1{
+.favorite-subscriptions h1 {
     color: #fff;
     padding-bottom: 2rem;
     font-size: 48px;
     font-weight: 700;
 }
 
-.favorite-subscriptions p{
+.favorite-subscriptions p {
     color: #fff;
     font-size: 18px;
     font-weight: 700;
 }
 
-.favorite-subscriptions a{
+.favorite-subscriptions a {
     margin: .5rem;
 }
 
-.favorite-subscriptions a img{
+.favorite-subscriptions a img {
     border-radius: 12px;
 }
 
-.favorite-subscriptions a:hover{
+.favorite-subscriptions a:hover {
     /* scale: 1.03; */
     border-radius: 12px;
     box-shadow: 0 0 7px 3px #63777fde;
 }
+
 /* favorite-subscriptions section end */
 
 /* prime-video section start */
-.prime-video{
+.prime-video {
     background-color: #222222;
     padding: 2rem;
     width: 100%;
@@ -294,24 +320,25 @@ header .navbar nav ul + ul li:last-child a:hover{
     align-items: center;
 }
 
-.prime-video img{
+.prime-video img {
     width: 100px;
     display: flex;
     justify-content: center;
     align-self: center;
 }
 
-.prime-video a{
-    color:  #79b8f3;
+.prime-video a {
+    color: #79b8f3;
     margin: .5rem;
 }
 
-.prime-video a:hover{
+.prime-video a:hover {
     color: #90dffe;
 }
 
-.prime-video p{
+.prime-video p {
     color: #8197a4;
     margin: .5rem;
 }
+
 /* prime-video section end */
