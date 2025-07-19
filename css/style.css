@@ -147,27 +147,21 @@ header .navbar nav ul+ul li:nth-child(2) a {
 }
 
 header .navbar nav ul+ul li:nth-child(2) a::after {
-    content: '\f078';
+    content: '\f107';
+    padding-left: 10px;
+    font-family: FontAwesome;
 }
 header .navbar nav ul+ul li:nth-child(2):hover a::after {
-    content: '\f077';
+    content: '\f106';
 }
 
-.dropdown{
+header .navbar nav ul+ul li .dropdown-menu .toggler{
     position: relative;
 }
-.dropdown-menu{
-    background-color: #e2e2e2cb;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: none;
-}
 
-.dropdown .dropdown-menu .toggle a:hover{
+header .navbar nav ul+ul li .dropdown-menu  .toggler:hover{
     display: block;
 }
-
 
 header .navbar nav ul+ul li:last-child .btn{
     background-color: #0d5896;
