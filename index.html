@@ -15,12 +15,12 @@
 <body>
     <!-- header section start -->
     <header>
-        <div class="navbar d-flex align-item-center">
+        <div class="navbar d-flex align-items-center">
             <a href="javascript:void(0)" class="logo">
                 <img src="./images/logo.png" alt="logo">
             </a>
             <nav class="d-flex justify-content-between">
-                <ul class="d-flex align-item-center">
+                <ul class="d-flex align-items-center">
                     <li>
                         <a href="javascript:void(0)">Home</a>
                     </li>
@@ -43,7 +43,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="d-flex dropdown-menu align-item-center">
+                <ul class="d-flex dropdown-menu align-items-center">
                     <li>
                         <a href="javascript:void(0)">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -118,38 +118,34 @@
             <!-- hero section start -->
             <section class="hero w-100">
                 <div class="row">
-                    <div class="col-6 d-flex flex-column">
+                    <div class="col-12 d-flex flex-column">
                         <div class="hero-content">
                             <h1>Welcome to Prime Video</h1>
-                            <p>Join Prime to watch the latest movies, TV shows and award-winning Amazon Originals</p>
+                            <p>Join Prime to watch the latest movies, TV shows and award-winning <br> Amazon Originals</p>
                             <a href="javascript:void(0)">Sign in to join Prime </a>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- hero section end -->
 
-            <!-- movie section start -->
             <section class="movie w-100">
                 <div class="row">
-                    <div class="col-6 d-flex flex-column">
-                        <div class="movie-content">
-                            <h1>Movie rentals on Prime Video</h1>
+                    <div class="col-12">
+                        <div class="movie-content flex-column">
+                            <h1>Movie rentals on Prime <br> Video</h1>
                             <p>Early Access to new movies, before digital subscription</p>
                             <a href="javascript:void(0)">Rent now</a>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- movie section end -->
 
-            <!-- favorite-subscriptions section start -->
-            <section class="favorite-subscriptions w-100">
-                <div class="row d-flex">
+            <section class="favorite-subscriptions d-flex flex-column w-100">
+                <div class="row">
                     <div class="col-6">
                         <div class="favorite-subscriptions-content">
-                            <h1>Your favorite subscriptions all in one place</h1>
-                            <p>Customers can subscribe to get access to a variety of premium and specialty content,
+                            <h1>Your favorite subscriptions <br> all in one place</h1>
+                            <p>Customers can subscribe to get access to a variety of premium and <br> specialty content,
                                 easily accessible within the Prime Video app</p>
                         </div>
                     </div>
@@ -192,23 +188,29 @@
                     </div>
                 </div>
             </section>
-            <!-- favorite subscriptions section end -->
+            <!-- hero section end -->
         </div>
     </main>
 
-    <!-- prime-video section start -->
-    <div class="prime-video d-flex">
-        <footer class="d-flex flex-column">
-            <img src="./images/prime-video.png" alt="">
-            <div class="prime-video-conten d-flex">
-                <a href="javascript:void(0)">Terms and Privacy Notice</a>
-                <a href="javascript:void(0)">Send us feedback</a>
-                <a href="javascript:void(0)">Help</a>
+    <!-- terms-privacy section start -->
+    <footer class="prime-video">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="terms-privacy d-flex flex-column">
+                        <img src="./images/prime-video.png" alt="">
+                        <div class="terms-privacy-content">
+                            <a href="javascript:void(0)">Terms and Privacy Notice</a>
+                            <a href="javascript:void(0)">Send us feedback</a>
+                            <a href="javascript:void(0)">Help</a>
+                        </div>
+                        <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+                    </div>
+                </div>
             </div>
-            <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
-        </footer>
-    </div>
-    <!-- prime-video section end -->
+        </div>
+    </footer>
+    <!-- terms-privacy section end -->
 </body>
 
 </html>
