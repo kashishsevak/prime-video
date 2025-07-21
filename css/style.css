@@ -150,22 +150,38 @@ header .navbar nav ul+ul li:nth-child(2) a {
     border-radius: 5px;
 }
 
-header .navbar nav ul+ul li:nth-child(2) a::after {
+header .navbar nav ul+ul li:nth-child(2) #dropdown-icon::after {
     content: '\f107';
     padding-left: 10px;
     font-family: FontAwesome;
 }
 
-header .navbar nav ul+ul li:nth-child(2):hover a::after {
+header .navbar nav ul+ul li:nth-child(2):hover #dropdown-icon::after {
     content: '\f106';
 }
 
-header .navbar nav ul+ul li .dropdown-menu .toggler {
-    position: relative;
+.dropdown-toggler .dropdown-menu {
+    backdrop-filter: blur(45px);
+    width: 650px;
+    height: 400px;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    transform: translate(-350px);
+    transition: all 0.5s ease;
 }
 
-header .navbar nav ul+ul li .dropdown-menu .toggler:hover {
-    display: block;
+.dropdown-toggler .dropdown-menu li a {
+    padding: .5rem;
+    width: 100px;
+}
+
+.dropdown-toggler:hover .dropdown-menu {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 header .navbar nav ul+ul li:last-child .btn {
