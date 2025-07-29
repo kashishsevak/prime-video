@@ -161,27 +161,29 @@ header .navbar nav ul+ul li:nth-child(2):hover #dropdown-icon::after {
 }
 
 .dropdown-toggler .dropdown-menu {
-    backdrop-filter: blur(45px);
-    width: 650px;
-    height: 400px;
+    backdrop-filter: blur(16px);
+    background: #191e25cc;
+    height: 60vh;
+    border-radius: 12px;
+    text-wrap: nowrap;
     margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 5px;
+    padding: 1.5rem;
     display: none;
     position: absolute;
     top: 100%;
-    transform: translate(-350px);
+    left: 45%;
     transition: all 0.5s ease;
 }
 
 .dropdown-toggler .dropdown-menu li a {
-    padding: .5rem;
-    width: 100px;
+    padding: 8px 16px;
+    margin: 5px;
 }
 
 .dropdown-toggler:hover .dropdown-menu {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 header .navbar nav ul+ul li:last-child .btn {
